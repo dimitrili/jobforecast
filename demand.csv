@@ -1,0 +1,76 @@
+Client,Binding Cat.,Format,PP,Qty,Embossment,Job Amount,Text Stock Code 
+clientA,PB,C,304,10000,['from live quote'],16598.0,140umClassic-980-0-50
+clientA,HB,C,432,40000,['from live quote'],130902.0,140umClassic-980-0-50
+clientA,HB,B,208,8000,['from live quote'],22850.0,120umCreamy-1140-0-50
+clientA,PB,C,304,6000,['from live quote'],11132.0,140umClassic-980-0-50
+clientA,PB,C,400,30000,['from live quote'],53921.0,140umCreamy-980-0-50
+clientA,PB,C,400,100000,['from live quote'],166676.0,140umCreamy-980-0-50
+clientA,PB,B,336,2000,['from live quote'],3169.0,2.4BulkCreamy-980-0-50
+clientA,PB,C,304,7500,['from live quote'],13048.0,140umClassic-980-0-50
+clientA,PB,C,304,7500,['from live quote'],12861.97,2.4BulkCreamy-980-0-50
+clientA,PB,B,144,10000,['Lam?'],18660.20625782228,2.4BulkCreamy-980-0-50
+clientA,PB,B,48,1000,['Lam?'],1866.020625782228,2.4BulkCreamy-980-0-50
+clientA,HB,C,288,1000,['Illustration'],1866.020625782228,120umCreamy-980-0-50
+clientA,PB,B,288,3000,['Lam?'],5598.061877346684,120umCreamy-1140-0-50
+clientA,PB,B,288,1000,[],1866.020625782228,120umCreamy-980-0-50
+clientA,PB,B,288,1000,['Illustration'],1866.020625782228,120umCreamy-980-0-50
+clientA,PB,C,288,5000,['Lam?'],9330.10312891114,140umCreamy-980-0-50
+clientA,PB,B,432,1000,['Lam?'],1866.020625782228,120umCreamy-855-0-50
+clientA,PB,B,432,1000,['Lam?'],1866.020625782228,120umCreamy-855-0-50
+clientA,PB,B,144,1000,['Lam?'],1866.020625782228,120umCreamy-1140-0-50
+clientA,PB,C,288,5000,"['Illustration', 'Lam?']",9330.10312891114,140umCreamy-980-0-50
+clientA,PB,B,144,5000,['Lam?'],9330.10312891114,120umCreamy-1140-0-50
+clientA,PB,C,288,1000,['Lam?'],1866.020625782228,140umClassic-980-0-50
+clientA,PB,C,144,1000,"['Illustration', 'Lam?']",1866.020625782228,140umCreamy-980-0-50
+clientA,HB,C,576,15000,[],27990.30938673342,120umCreamy-980-0-50
+clientA,PB,B,432,1000,['Lam?'],1866.020625782228,2.4BulkCreamy-980-0-50
+clientA,PB,B,432,1000,['Lam?'],1866.020625782228,120umCreamy-980-0-50
+clientA,PB,B,144,1000,['Lam?'],1866.020625782228,2.4BulkCreamy-980-0-50
+clientA,PB,C,288,1000,['Lam?'],1866.020625782228,140umCreamy-980-0-50
+clientA,PB,B,288,1000,"['Illustration', 'Lam?']",1866.020625782228,120umCreamy-980-0-50
+clientA,PB,C,288,5000,"['Illustration', 'Lam?']",9330.10312891114,140umClassic-980-0-50
+clientA,PB,B,144,5000,['Lam?'],9330.10312891114,120umCreamy-980-0-50
+clientB,PB,B,240,5000,['from live quote'],5570.08,140umCreamy-1140-0-50
+clientB,PB,B,568,2000,['from live quote'],4995.74,140umCreamy-1140-0-50
+clientB,PB,B,360,2000,['from live quote'],3510.03,140umCreamy-1140-0-50
+clientB,PB,B,408,2000,['from live quote'],3983.46,140umCreamy-1140-0-50
+clientB,PB,B,336,2500,['from live quote'],3630.5,140umCreamy-1140-0-50
+clientB,PB,B,288,2500,['from live quote'],3630.5,140umCreamy-1140-0-50
+clientB,PB,B,288,2000,['from live quote'],2793.98,140umCreamy-1140-0-50
+clientB,PB,B,288,2000,['from live quote'],2793.98,140umCreamy-1140-0-50
+clientB,PB,B,288,2000,['from live quote'],2793.98,140umCreamy-1140-0-50
+clientB,Others,C+,48,1000,['Lam?'],1741.5592783505153,PUBLIM-0450-0320-090
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,48,3000,['Lam?'],5224.677835051546,140umCreamy-980-0-50
+clientB,PB,B,48,1000,['Lam?'],1741.5592783505153,140umCreamy-1140-0-50
+clientB,PB,B,432,3000,['Lam?'],5224.677835051546,140umCreamy-980-0-50
+clientB,HB,B,288,5000,['Lam?'],8707.796391752578,140umCreamy-1140-0-50
+clientB,PB,B,48,1000,['Lam?'],1741.5592783505153,120umCreamy-1140-0-50
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,48,1000,['Lam?'],1741.5592783505153,140umCreamy-1140-0-50
+clientB,PB,B,48,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,48,3000,['Lam?'],5224.677835051546,140umCreamy-980-0-50
+clientB,PB,B+,144,5000,['Lam?'],8707.796391752578,140umCreamy-915-0-50
+clientB,PB,B,432,3000,['Lam?'],5224.677835051546,140umCreamy-1140-0-50
+clientB,Others,C+,48,1000,['Lam?'],1741.5592783505153,PUBLIM-0450-0320-090
+clientB,PB,B,48,1000,['Lam?'],1741.5592783505153,120umCreamy-1140-0-50
+clientB,Others,C+,48,1000,['Lam?'],1741.5592783505153,PUBLIM-0450-0320-090
+clientB,PB,B,288,1000,"['Illustration', 'Lam?']",1741.5592783505153,140umCreamy-980-0-50
+clientB,Others,C+,48,1000,['Lam?'],1741.5592783505153,PUBLIM-0450-0320-090
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,432,10000,"['Illustration', 'Lam?']",17415.592783505155,140umCreamy-1140-0-50
+clientB,PB,B,48,3000,['Lam?'],5224.677835051546,140umCreamy-1140-0-50
+clientB,PB,B,576,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,432,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,432,1000,['Lam?'],1741.5592783505153,140umCreamy-1140-0-50
+clientB,Others,C+,48,1000,['Lam?'],1741.5592783505153,PUBLIM-0450-0320-090
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,120umCreamy-1140-0-50
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B+,288,1000,['Lam?'],1741.5592783505153,120umCreamy-980-0-50
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,140umCreamy-1140-0-50
+clientB,PB,B,576,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,576,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,288,1000,['Lam?'],1741.5592783505153,140umCreamy-1140-0-50
+clientB,PB,B,432,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,432,1000,['Lam?'],1741.5592783505153,140umCreamy-980-0-50
+clientB,PB,B,48,1000,['Lam?'],1741.5592783505153,140umCreamy-1140-0-50
