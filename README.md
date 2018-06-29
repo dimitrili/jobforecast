@@ -12,12 +12,12 @@ python tool
 -temp file-
 1."client's name".csv
 
--work flow-
+---work flow---
 1.set the month, year, client's name and budget
 2.based on testdata.csv, extract the records of the assigned period
 3.calculate the rate for each job type
 4.randomly generate the jobs for the month, but search the jobs from livequote.csv first
-5.output demand.csv and print some info
+5.output demand.csv and print out some info
 
 
 
