@@ -20,4 +20,8 @@ python tool
 5.output demand.csv and print out some info
 
 
+-Note-
+1.livequote.csv doesn't show the embellishment, to be fixed
+2.the csv files here are just samples
+
 
