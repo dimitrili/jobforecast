@@ -113,7 +113,7 @@ def getthestock(c, t, f):
 results = nested_dict(4)
 # prepare the new file
 newheader = ['Client', 'Binding Cat.', 'Format',
-             'PP', 'Qty', 'Embossment', 'Job Amount', 'Text Stock Code ']
+             'PP', 'Qty', 'Embellishment', 'Job Amount', 'Text Stock Code ']
 with open(outputfilename, 'w', newline='') as new_file:
     csv_writer = csv.writer(new_file)
     csv_writer.writerow(newheader)
