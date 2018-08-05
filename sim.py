@@ -131,6 +131,10 @@ for client_name in client_info.keys():
                 for q in qtys:
                     # 'jobs' to record how many jobs
                     results[t][f][p][q]['jobs'] = 0
+                    # 'unit_price' for each type
+                    results[t][f][p][q]['unit_price'] = 0
+                    # 'actual_qty' for each type
+                    results[t][f][p][q]['actual_qty'] = 0
                     # 'amount' to record how much for this type
                     results[t][f][p][q]['amount'] = 0
                     for e in embs:
@@ -144,7 +148,7 @@ for client_name in client_info.keys():
             csv_writer.writerow(reader.fieldnames)
             for line in reader:
                 a = float(line['Job Amount'].replace(",", ""))
-                d = dt.datetime.strptime(line['Add Date'], '%d/%m/%Y %H:%M')
+                d = dt.datetime.strptime(line['Ex-factory'], '%d/%m/%Y')
                 # only get the client's row and the month we need
                 if (isdatematch(str(d.date()), est_month, history_year) and (line['Client Code'] == client_name) and (a != 0) and (line['PP'] != 0)):
                     total_num_jobs += 1
@@ -156,9 +160,11 @@ for client_name in client_info.keys():
                     p = translatefromrange(line['PP'], pps)
                     # calculate the qty range
                     q = line['Job Qty'].replace(",", "")
-                    total_job_qty += int(q)
+                    total_job_qty = int(q)
                     q = translatefromrange(q, qtys)
                     results[t][f][p][q]['jobs'] += 1
+                    results[t][f][p][q]['actual_qty'] += total_job_qty
+                    results[t][f][p][q]['amount'] += a
                     # collect the emboss range
                     for temp in embs:
                         if (line[temp] == 'TRUE'):
@@ -172,6 +178,10 @@ for client_name in client_info.keys():
             for f in formats:
                 for p in pps:
                     for q in qtys:
+                        # calculate unit price first
+                        if (results[t][f][p][q]['actual_qty']):
+                            results[t][f][p][q]['unit_price'] = results[t][f][p][q]['amount'] / \
+                                results[t][f][p][q]['actual_qty']
                         # calculate the rates for the emboss
                         if (results[t][f][p][q]['jobs']):
                             for e in embs:
@@ -189,8 +199,7 @@ for client_name in client_info.keys():
                     for q in qtys:
                         results[t][f][p][q]['jobs'] += temp
                         temp = results[t][f][p][q]['jobs']
-    if (total_job_qty):
-        copy_unit_price = total_job_amount / total_job_qty
+
     total_job_amount = 0
     temp = 0
     lq_jobs = 0
@@ -255,7 +264,8 @@ for client_name in client_info.keys():
                                                weights=list(temp_stock.values()))
                                 s = stockcodemapping(s[0])
                                 temp += 1
-                                a = copy_unit_price * int(q)
+
+                                a = results[t][f][p][q]['unit_price'] * int(q)
                                 results[t][f][p][q]['amount'] -= a
                                 rowdata = [client_name, t, f,
                                            p, q, emblist, a, s]
@@ -265,6 +275,6 @@ for client_name in client_info.keys():
         x = (total_job_amount - client_budget) / client_budget
         print('{}-{} random jobs, {} from live quote, amout:{}, budget:{}, D={:.2f}'.format(client_name, temp, lq_jobs,
                                                                                             total_job_amount, client_budget, x))
-    print(client_name + '-unit price => $' + str(copy_unit_price) + '/copy')
+
 
 print("Simulation of {}-{} is finished!".format(est_year, est_month))
